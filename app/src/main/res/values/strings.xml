@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">Pick up Lines</string>
+    <string name="check_ads">Check Ads</string>
+    <string name="no_internet">No Internet</string>
+    <string name="thanks_txt">Thanks</string>
+    <string name="enjo_app">Did you enjoy our app?</string>
+    <string name="rating_detail">Please rate your experience</string>
+    <string name="no">No</string>
+    <string name="cancel">Cancel</string>
+    <string name="rate_us">Rate Us</string>
+    <string name="set_app_language">Select App Language</string>
+    <string name="ad">Ad</string>
+    <string name="apply">apply</string>
+    <string name="loading_ad">Ad Loading ..</string>
+    <string name="share_app">Share App</string>
+    <string name="more_app">More App (Ad)</string>
+    <string name="privacy">Privacy</string>
+    <string name="language">Language</string>
+    <string name="english">English</string>
+    <string name="denmake">Denmarke</string>
+    <string name="france">France</string>
+    <string name="germany">Germany</string>
+    <string name="india">India</string>
+    <string name="italian">Italian</string>
+    <string name="spain">Spain</string>
+</resources>

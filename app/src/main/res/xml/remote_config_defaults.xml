@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?><!-- START xml_defaults -->
+<defaultsMap>
+
+    <entry>
+        <key>val_ad_app_open_screen</key>
+        <value>true</value>
+    </entry>
+
+</defaultsMap>

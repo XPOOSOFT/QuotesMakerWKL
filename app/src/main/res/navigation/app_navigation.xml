@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/app_nan"
+    app:startDestination="@id/mySplashFragment">
+
+    <fragment
+        android:id="@+id/mySplashFragment"
+        android:name="com.poetry.on.quotescreaterwakeel.ui.SplashFragment"
+        android:label="mySplashFragment"
+        tools:layout="@layout/fragment_splash" />
+    <fragment
+        android:id="@+id/LanguageFragment"
+        android:name="com.poetry.on.quotescreaterwakeel.ui.LanguageFragment"
+        android:label="LanguageFragment"
+        tools:layout="@layout/fragment_language" />
+    <fragment
+        android:id="@+id/myMainMenuFragment"
+        android:name="com.poetry.on.quotescreaterwakeel.ui.MainAppFragment"
+        android:label="myMainMenuFragment"
+        tools:layout="@layout/fragment_main_menu_activity" >
+    </fragment>
+
+</navigation>

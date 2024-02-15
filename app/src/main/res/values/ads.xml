@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="id_application_id" translatable="false">ca-app-pub-3940256099942544~3347511713</string>
+<!--    <string name="id_application_id" translatable="false"></string>-->
+    <string name="id_native" translatable="false"></string>
+    <string name="id_fullscreen_splash" translatable="false"></string>
+    <string name="app_open_splash" translatable="false"></string>
+
+  <!--  <string name="id_application_id" translatable="false"></string>
+    <string name="id_native" translatable="false"></string>
+    <string name="id_fullscreen_splash" translatable="false"></string>
+-->
+</resources>

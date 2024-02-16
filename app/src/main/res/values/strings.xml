@@ -23,4 +23,6 @@
     <string name="india">India</string>
     <string name="italian">Italian</string>
     <string name="spain">Spain</string>
+    <string name="favorite">Favorite</string>
+    <string name="exit_app">Exit App</string>
 </resources>

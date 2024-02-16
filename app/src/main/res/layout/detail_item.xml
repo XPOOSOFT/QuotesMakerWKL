@@ -3,19 +3,18 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:background="#00FFFFFF"
     android:layout_marginHorizontal="@dimen/_10sdp"
-    android:layout_marginVertical="@dimen/_10sdp">
+    android:layout_marginVertical="@dimen/_10sdp"
+    android:background="#00FFFFFF">
 
     <TextView
         android:id="@+id/detail_text_view"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/app_name"
-        android:paddingVertical="@dimen/_10sdp"
-        android:textColor="@color/white"
         android:background="@drawable/detail_item_bg"
         android:gravity="center"
+        android:text="@string/app_name"
+        android:textColor="@color/white"
         app:layout_constraintBottom_toTopOf="@id/bottomView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -24,11 +23,55 @@
     <View
         android:id="@+id/bottomView"
         android:layout_width="wrap_content"
-        android:layout_height="@dimen/_30sdp"
+        android:layout_height="@dimen/_35sdp"
         android:background="@drawable/rect_item_detail"
-        app:layout_constraintTop_toBottomOf="@id/detail_text_view"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
-        />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/detail_text_view" />
+
+    <androidx.constraintlayout.utils.widget.ImageFilterView
+        android:id="@+id/shareIcon"
+        android:layout_width="@dimen/_15sdp"
+        android:layout_height="@dimen/_15sdp"
+        android:layout_marginEnd="@dimen/_20sdp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="@id/bottomView"
+        app:layout_constraintEnd_toEndOf="@id/bottomView"
+        app:layout_constraintTop_toTopOf="@id/bottomView"
+        app:srcCompat="@drawable/share_icon" />
+
+    <androidx.constraintlayout.utils.widget.ImageFilterView
+        android:id="@+id/speakIcon"
+        android:layout_width="@dimen/_15sdp"
+        android:layout_height="@dimen/_15sdp"
+        android:layout_marginEnd="@dimen/_20sdp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="@id/shareIcon"
+        app:layout_constraintEnd_toStartOf="@id/shareIcon"
+        app:layout_constraintTop_toTopOf="@id/shareIcon"
+        app:srcCompat="@drawable/speak_icon" />
+
+    <androidx.constraintlayout.utils.widget.ImageFilterView
+        android:id="@+id/copyIcon"
+        android:layout_width="@dimen/_15sdp"
+        android:layout_height="@dimen/_15sdp"
+        android:layout_marginEnd="@dimen/_20sdp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="@id/speakIcon"
+        app:layout_constraintEnd_toStartOf="@id/speakIcon"
+        app:layout_constraintTop_toTopOf="@id/speakIcon"
+        app:srcCompat="@drawable/copy_icon" />
+
+    <androidx.constraintlayout.utils.widget.ImageFilterView
+        android:id="@+id/fvrtIcon"
+        android:layout_width="@dimen/_15sdp"
+        android:layout_height="@dimen/_15sdp"
+        android:layout_marginEnd="@dimen/_20sdp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="@id/copyIcon"
+        app:layout_constraintEnd_toStartOf="@id/copyIcon"
+        app:layout_constraintTop_toTopOf="@id/copyIcon"
+        app:srcCompat="@drawable/un_fvrt_icon" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

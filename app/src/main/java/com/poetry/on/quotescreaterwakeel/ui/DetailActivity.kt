@@ -3,9 +3,10 @@ package com.poetry.on.quotescreaterwakeel.ui
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.bumptech.glide.Glide
+import com.poetry.on.quotescreaterwakeel.R
 import com.poetry.on.quotescreaterwakeel.adapter.DetailAdapter
 import com.poetry.on.quotescreaterwakeel.databinding.ActivityDetailBinding
-import com.poetry.on.quotescreaterwakeel.model.Item
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.launch
@@ -24,14 +25,14 @@ class DetailActivity : AppCompatActivity() {
         setContentView(binding?.root)
 
         val item = intent.getStringExtra("item")
-
+        Glide.with(this).load(R.drawable.back_btn).into(binding?.topLay?.navMenu?:return)
+        binding?.topLay?.title?.text = item
         GlobalScope.launch(Dispatchers.IO) {
-            readTextFileFromAssets(item?:return@launch)
-//            readTextFileFromAssets("allama")
+            readTextFileFromAssets(item ?: return@launch)
         }
     }
 
-    private fun readTextFileFromAssets(file : String) {
+    private fun readTextFileFromAssets(file: String) {
         try {
             val inputStream = assets.open("$file.txt")
             val reader = BufferedReader(InputStreamReader(inputStream))
@@ -44,7 +45,8 @@ class DetailActivity : AppCompatActivity() {
 
             GlobalScope.launch(Dispatchers.Main) {
                 textAdapter = DetailAdapter(textList)
-                binding?.recyclerViewLinear?.layoutManager = LinearLayoutManager(this@DetailActivity)
+                binding?.recyclerViewLinear?.layoutManager =
+                    LinearLayoutManager(this@DetailActivity)
                 binding?.recyclerViewLinear?.adapter = textAdapter
 //                textAdapter?.notifyDataSetChanged()
             }

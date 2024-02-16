@@ -15,7 +15,6 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintWidth_percent="0.75">
 
-
         <View
             android:id="@+id/top_view"
             android:layout_width="0dp"
@@ -24,6 +23,42 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="@+id/top_view"
+            app:layout_constraintEnd_toEndOf="@id/top_view"
+            app:layout_constraintStart_toStartOf="@id/top_view"
+            app:layout_constraintTop_toTopOf="@id/top_view"
+            app:layout_constraintVertical_bias="0.2"
+            app:srcCompat="@drawable/nav_graph_icon" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Upgrade to PRO!"
+            android:textSize="@dimen/_15sdp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@id/textView4"
+            app:layout_constraintEnd_toEndOf="@+id/top_view"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rect_nav_btn"
+            android:paddingHorizontal="@dimen/_20sdp"
+            android:paddingVertical="@dimen/_5sdp"
+            android:text="Go Premium"
+            app:layout_constraintBottom_toBottomOf="@+id/top_view"
+            app:layout_constraintEnd_toEndOf="@+id/textView2"
+            app:layout_constraintStart_toStartOf="@id/textView2"
+            app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
         <!--    Share Button -->
         <View
@@ -40,30 +75,72 @@
             android:layout_width="@dimen/_30sdp"
             android:layout_height="@dimen/_30sdp"
             android:layout_marginStart="@dimen/_5sdp"
-            android:background="@drawable/nave_share"
+            android:padding="@dimen/_5sdp"
             android:visibility="visible"
             app:layout_constraintBottom_toBottomOf="@id/share_app_view"
             app:layout_constraintEnd_toStartOf="@+id/share_app_text"
             app:layout_constraintHorizontal_chainStyle="packed"
             app:layout_constraintStart_toStartOf="@id/share_app_view"
-            app:layout_constraintTop_toTopOf="@id/share_app_view" />
+            app:layout_constraintTop_toTopOf="@id/share_app_view"
+            app:srcCompat="@drawable/nave_share" />
 
         <TextView
             android:id="@+id/share_app_text"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:textStyle="bold"
             android:layout_margin="@dimen/_5sdp"
             android:gravity="start"
             android:singleLine="true"
             android:text="@string/share_app"
             android:textColor="@color/black"
             android:textSize="@dimen/_18sdp"
+            android:textStyle="bold"
             android:visibility="visible"
             app:layout_constraintBottom_toBottomOf="@+id/share_app_image"
             app:layout_constraintEnd_toEndOf="@id/share_app_view"
             app:layout_constraintStart_toEndOf="@+id/share_app_image"
             app:layout_constraintTop_toTopOf="@+id/share_app_image" />
+
+        <!--    Exit Button -->
+        <View
+            android:id="@+id/exit_view"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_35sdp"
+            android:layout_marginTop="@dimen/_15sdp"
+            app:layout_constraintEnd_toEndOf="@id/share_app_view"
+            app:layout_constraintStart_toStartOf="@id/share_app_view"
+            app:layout_constraintTop_toBottomOf="@id/share_app_view" />
+
+        <androidx.constraintlayout.utils.widget.ImageFilterView
+            android:id="@+id/exit_image"
+            android:layout_width="@dimen/_30sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:padding="@dimen/_5sdp"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="@id/exit_view"
+            app:layout_constraintEnd_toStartOf="@+id/share_app_text"
+            app:layout_constraintHorizontal_chainStyle="packed"
+            app:layout_constraintStart_toStartOf="@id/exit_view"
+            app:layout_constraintTop_toTopOf="@id/exit_view"
+            app:srcCompat="@drawable/exit_icon_dialog" />
+
+        <TextView
+            android:id="@+id/exit_text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_5sdp"
+            android:gravity="start"
+            android:singleLine="true"
+            android:text="@string/exit_app"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_18sdp"
+            android:textStyle="bold"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="@+id/exit_image"
+            app:layout_constraintEnd_toEndOf="@id/exit_view"
+            app:layout_constraintStart_toEndOf="@+id/exit_image"
+            app:layout_constraintTop_toTopOf="@+id/exit_image" />
 
         <!--    Rate Us Button -->
         <View
@@ -80,13 +157,13 @@
             android:layout_width="@dimen/_30sdp"
             android:layout_height="@dimen/_30sdp"
             android:layout_marginStart="@dimen/_5sdp"
-            android:background="@drawable/nav_rate"
             android:visibility="visible"
             app:layout_constraintBottom_toBottomOf="@id/rate_us_view"
             app:layout_constraintEnd_toStartOf="@+id/rate_us_text"
             app:layout_constraintHorizontal_chainStyle="packed"
             app:layout_constraintStart_toStartOf="@id/rate_us_view"
-            app:layout_constraintTop_toTopOf="@id/rate_us_view" />
+            app:layout_constraintTop_toTopOf="@id/rate_us_view"
+            app:srcCompat="@drawable/nav_rate" />
 
         <TextView
             android:id="@+id/rate_us_text"
@@ -94,11 +171,11 @@
             android:layout_height="wrap_content"
             android:layout_margin="@dimen/_5sdp"
             android:gravity="start"
-            android:textStyle="bold"
             android:singleLine="true"
             android:text="@string/rate_us"
             android:textColor="@color/black"
             android:textSize="@dimen/_18sdp"
+            android:textStyle="bold"
             android:visibility="visible"
             app:layout_constraintBottom_toBottomOf="@+id/rate_us_image"
             app:layout_constraintEnd_toEndOf="@id/rate_us_view"
@@ -120,13 +197,14 @@
             android:layout_width="@dimen/_30sdp"
             android:layout_height="@dimen/_30sdp"
             android:layout_marginStart="@dimen/_5sdp"
-            android:background="@drawable/nave_share"
+            android:padding="@dimen/_5sdp"
             android:visibility="visible"
             app:layout_constraintBottom_toBottomOf="@id/language_view"
             app:layout_constraintEnd_toStartOf="@+id/language_text"
             app:layout_constraintHorizontal_chainStyle="packed"
             app:layout_constraintStart_toStartOf="@id/language_view"
-            app:layout_constraintTop_toTopOf="@id/language_view" />
+            app:layout_constraintTop_toTopOf="@id/language_view"
+            app:srcCompat="@drawable/nave_share" />
 
         <TextView
             android:id="@+id/language_text"
@@ -136,14 +214,54 @@
             android:gravity="start"
             android:singleLine="true"
             android:text="@string/language"
-            android:textStyle="bold"
             android:textColor="@color/black"
             android:textSize="@dimen/_18sdp"
+            android:textStyle="bold"
             android:visibility="visible"
             app:layout_constraintBottom_toBottomOf="@+id/language_image"
             app:layout_constraintEnd_toEndOf="@id/language_view"
             app:layout_constraintStart_toEndOf="@+id/language_image"
             app:layout_constraintTop_toTopOf="@+id/language_image" />
+        <!--    Favrt Button -->
+        <View
+            android:id="@+id/fvrt_view"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_35sdp"
+            android:layout_marginTop="@dimen/_15sdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/language_view" />
+
+        <androidx.constraintlayout.utils.widget.ImageFilterView
+            android:id="@+id/fvrt_image"
+            android:layout_width="@dimen/_30sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:backgroundTint="@color/black"
+            android:padding="@dimen/_5sdp"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="@id/fvrt_view"
+            app:layout_constraintEnd_toStartOf="@+id/language_text"
+            app:layout_constraintHorizontal_chainStyle="packed"
+            app:layout_constraintStart_toStartOf="@id/fvrt_view"
+            app:layout_constraintTop_toTopOf="@id/fvrt_view"
+            app:srcCompat="@drawable/un_fvrt_icon" />
+
+        <TextView
+            android:id="@+id/fvrt_text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_5sdp"
+            android:gravity="start"
+            android:singleLine="true"
+            android:text="@string/favorite"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_18sdp"
+            android:textStyle="bold"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="@+id/fvrt_image"
+            app:layout_constraintEnd_toEndOf="@id/fvrt_view"
+            app:layout_constraintStart_toEndOf="@+id/fvrt_image"
+            app:layout_constraintTop_toTopOf="@+id/fvrt_image" />
 
         <!--    Rate Us Button -->
         <View
@@ -160,13 +278,14 @@
             android:layout_width="@dimen/_30sdp"
             android:layout_height="@dimen/_30sdp"
             android:layout_marginStart="@dimen/_5sdp"
-            android:background="@drawable/nave_more"
+            android:padding="@dimen/_5sdp"
             android:visibility="visible"
             app:layout_constraintBottom_toBottomOf="@id/more_app_view"
             app:layout_constraintEnd_toStartOf="@+id/more_app_text"
             app:layout_constraintHorizontal_chainStyle="packed"
             app:layout_constraintStart_toStartOf="@id/more_app_view"
-            app:layout_constraintTop_toTopOf="@id/more_app_view" />
+            app:layout_constraintTop_toTopOf="@id/more_app_view"
+            app:srcCompat="@drawable/nave_more" />
 
         <TextView
             android:id="@+id/more_app_text"
@@ -175,10 +294,10 @@
             android:layout_margin="@dimen/_5sdp"
             android:gravity="start"
             android:singleLine="true"
-            android:textStyle="bold"
             android:text="@string/more_app"
             android:textColor="@color/black"
             android:textSize="@dimen/_18sdp"
+            android:textStyle="bold"
             android:visibility="visible"
             app:layout_constraintBottom_toBottomOf="@+id/more_app_image"
             app:layout_constraintEnd_toEndOf="@id/more_app_view"
@@ -191,22 +310,23 @@
             android:layout_width="0dp"
             android:layout_height="@dimen/_35sdp"
             android:layout_marginTop="@dimen/_15sdp"
-            app:layout_constraintEnd_toEndOf="@+id/language_view"
-            app:layout_constraintStart_toStartOf="@id/language_view"
-            app:layout_constraintTop_toBottomOf="@id/language_view" />
+            app:layout_constraintEnd_toEndOf="@+id/fvrt_view"
+            app:layout_constraintStart_toStartOf="@id/fvrt_view"
+            app:layout_constraintTop_toBottomOf="@id/fvrt_view" />
 
         <androidx.constraintlayout.utils.widget.ImageFilterView
             android:id="@+id/privacy_image"
             android:layout_width="@dimen/_30sdp"
             android:layout_height="@dimen/_33sdp"
             android:layout_marginStart="@dimen/_5sdp"
-            android:background="@drawable/nave_privacy"
+            android:padding="@dimen/_5sdp"
             android:visibility="visible"
             app:layout_constraintBottom_toBottomOf="@id/privacy_view"
             app:layout_constraintEnd_toStartOf="@+id/privacy_text"
             app:layout_constraintHorizontal_chainStyle="packed"
             app:layout_constraintStart_toStartOf="@id/privacy_view"
-            app:layout_constraintTop_toTopOf="@id/privacy_view" />
+            app:layout_constraintTop_toTopOf="@id/privacy_view"
+            app:srcCompat="@drawable/nave_privacy" />
 
         <TextView
             android:id="@+id/privacy_text"
@@ -217,13 +337,14 @@
             android:singleLine="true"
             android:text="@string/privacy"
             android:textColor="@color/black"
-            android:textStyle="bold"
             android:textSize="@dimen/_18sdp"
+            android:textStyle="bold"
             android:visibility="visible"
             app:layout_constraintBottom_toBottomOf="@+id/privacy_image"
             app:layout_constraintEnd_toEndOf="@id/privacy_view"
             app:layout_constraintStart_toEndOf="@+id/privacy_image"
             app:layout_constraintTop_toTopOf="@+id/privacy_image" />
+
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

@@ -1,6 +1,5 @@
 package com.poetry.on.quotescreaterwakeel.ui
 
-import android.content.Intent
 import android.os.Bundle
 import android.util.Log
 import android.view.View
@@ -16,11 +15,11 @@ import com.google.firebase.remoteconfig.ktx.remoteConfig
 import com.google.firebase.remoteconfig.ktx.remoteConfigSettings
 import com.poetry.on.quotescreaterwakeel.R
 import com.poetry.on.quotescreaterwakeel.ads_manager.AdsManager
+import com.poetry.on.quotescreaterwakeel.ads_manager.billing.PurchasePrefs
 import com.poetry.on.quotescreaterwakeel.ads_manager.loadTwoInterAdsSplash
 import com.poetry.on.quotescreaterwakeel.ads_manager.showNormalInterAdSingle
 import com.poetry.on.quotescreaterwakeel.databinding.FragmentSplashBinding
 import com.poetry.on.quotescreaterwakeel.utilities.BaseFragment
-import com.poetry.on.quotescreaterwakeel.utilities.DbHelper
 import com.poetry.on.quotescreaterwakeel.utilities.IS_FIRST
 import com.poetry.on.quotescreaterwakeel.utilities.LANG_CODE
 import com.poetry.on.quotescreaterwakeel.utilities.LANG_SCREEN
@@ -51,19 +50,19 @@ import kotlinx.coroutines.delay
 class SplashFragment :
     BaseFragment<FragmentSplashBinding>(FragmentSplashBinding::inflate) {
 
-    private var dbHelper: DbHelper? = null
+    private var dbHelper: PurchasePrefs? = null
     private var adsManager: AdsManager? = null
     private var remoteConfig: FirebaseRemoteConfig? = null
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+        dbHelper = PurchasePrefs(context ?: return)
+        dbHelper?.getStringData(LANG_CODE, "en")?.let { setLocaleMain(it) }
 
         isSplash = false
         counter = 0
         inter_frequency_count = 0
         adsManager = AdsManager.appAdsInit(activity ?: return)
-        dbHelper = DbHelper(context ?: return)
-        dbHelper?.getStringData(requireContext(), LANG_CODE, "en")?.let { setLocaleMain(it) }
 
         loadTwoInterAdsSplash(
             adsManager ?: return,
@@ -75,9 +74,9 @@ class SplashFragment :
 
 //        initRemoteIds()
 //        initRemoteConfig()
-        activity?.finish()
-        startActivity(Intent(activity ?:return,MainMenuActivity::class.java))
-//        observeSplashLiveData()
+//        activity?.finish()
+//        startActivity(Intent(activity ?:return,MainMenuFragment::class.java))
+        observeSplashLiveData()
         setupBackPressedCallback {
             //Do Nothing
         }
@@ -109,10 +108,8 @@ class SplashFragment :
 
                         }
                     }
-                    if (dbHelper?.getBooleanData(
-                            context ?: return@launchWhenCreated,
-                            IS_FIRST,
-                            false
+                    if (dbHelper?.getBoolean(
+                            IS_FIRST
                         ) == false
                     ) {
                         firebaseAnalytics(
@@ -128,9 +125,9 @@ class SplashFragment :
                             "loading_fragment_load_next_btn_main",
                             "loading_fragment_load_next_btn_main -->  Click"
                         )
-                        activity?.finish()
-                        startActivity(Intent(activity ?: return@launchWhenCreated, MainMenuActivity::class.java))
-//                        findNavController().navigate(R.id.myMainMenuFragment)
+//                        activity?.finish()
+//                        startActivity(Intent(activity ?: return@launchWhenCreated, MainMenuFragment::class.java))
+                        findNavController().navigate(R.id.myMainMenuFragment)
                     }
                 } catch (e: Exception) {
                     e.printStackTrace()

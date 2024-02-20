@@ -17,7 +17,7 @@
     <string name="privacy">Privacy</string>
     <string name="language">Language</string>
     <string name="english">English</string>
-    <string name="denmake">Denmarke</string>
+    <string name="denmake">Denmark</string>
     <string name="france">France</string>
     <string name="germany">Germany</string>
     <string name="india">India</string>
@@ -25,4 +25,23 @@
     <string name="spain">Spain</string>
     <string name="favorite">Favorite</string>
     <string name="exit_app">Exit App</string>
+    <string name="unlimited_access_to_everything">Unlimited access to everything</string>
+    <string name="continue_txt">Continue</string>
+    <string name="pro_detail_text">This is pro content, watch video\nto get this free, or you can \nbuy pro</string>
+    <string name="whatch_view">Watch Video</string>
+    <string name="buy_pro">Buy Pro</string>
+    <string name="copy_text">Text Copy</string>
+    <string name="go_premium">Go Premium</string>
+    <string name="upgrade_to_pro">Upgrade to PRO!</string>
+    <string name="m_q">Motivational Quotes</string>
+    <string name="s_s">Say Sorry</string>
+    <string name="s_ll">Short Love Letter</string>
+    <string name="i_q">Inspirational Quotes</string>
+    <string name="b_w_t">Birthday Wish Text</string>
+    <string name="l_q">Life Quotes</string>
+    <string name="p_q">Positive Quotes</string>
+    <string name="f_q">Funny Quotes</string>
+    <string name="s_q">Success Quotes</string>
+    <string name="yes">Yes</string>
+
 </resources>

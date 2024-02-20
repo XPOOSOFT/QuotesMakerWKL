@@ -3,18 +3,16 @@ package com.poetry.on.quotescreaterwakeel.ui
 import android.os.Bundle
 import android.view.View
 import android.view.WindowManager
-import androidx.core.app.ActivityCompat.recreate
 import androidx.navigation.fragment.findNavController
-import com.poetry.on.quotescreaterwakeel.adapter.AppLanguageAdapter
 import com.google.android.gms.ads.LoadAdError
 import com.google.android.gms.ads.nativead.NativeAd
 import com.google.android.gms.ads.nativead.NativeAdView
 import com.poetry.on.quotescreaterwakeel.R
+import com.poetry.on.quotescreaterwakeel.adapter.AppLanguageAdapter
 import com.poetry.on.quotescreaterwakeel.ads_manager.AdsManager
 import com.poetry.on.quotescreaterwakeel.ads_manager.billing.PurchasePrefs
 import com.poetry.on.quotescreaterwakeel.ads_manager.interfaces.NativeListener
 import com.poetry.on.quotescreaterwakeel.databinding.FragmentLanguageBinding
-import com.poetry.on.quotescreaterwakeel.model.LanguageModel
 import com.poetry.on.quotescreaterwakeel.utilities.BaseFragment
 import com.poetry.on.quotescreaterwakeel.utilities.IS_FIRST
 import com.poetry.on.quotescreaterwakeel.utilities.LANG_CODE
@@ -35,7 +33,6 @@ class LanguageFragment : BaseFragment<FragmentLanguageBinding>(FragmentLanguageB
     private var adsManager: AdsManager? = null
     private var sharedPrefUtils: PurchasePrefs? = null
     private var adapter: AppLanguageAdapter? = null
-    var list: ArrayList<LanguageModel> = ArrayList()
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
@@ -56,9 +53,9 @@ class LanguageFragment : BaseFragment<FragmentLanguageBinding>(FragmentLanguageB
                     "language_fragment_forward_btn_from",
                     "language_fragment_forward_btn_from -->  Click"
                 )
-                sharedPrefUtils?.putStringLang( LANG_CODE, positionSelected) ?: "en"
+                sharedPrefUtils?.putStringLang(LANG_CODE, positionSelected) ?: "en"
                 setLocaleMain(positionSelected)
-                recreate(requireActivity())
+                findNavController().navigateUp()
             } else {
                 firebaseAnalytics(
                     "language_fragment_forward_btn_from",
@@ -72,7 +69,7 @@ class LanguageFragment : BaseFragment<FragmentLanguageBinding>(FragmentLanguageB
         }
 
         sharedPrefUtils = PurchasePrefs(context ?: return)
-        positionSelected = sharedPrefUtils?.getStringLang( LANG_CODE) ?: "en"
+        positionSelected = sharedPrefUtils?.getStringLang(LANG_CODE) ?: "en"
         adapter = AppLanguageAdapter(clickItem = {
             positionSelected = it.country_code
         }, languageData = languageData())
@@ -108,14 +105,17 @@ class LanguageFragment : BaseFragment<FragmentLanguageBinding>(FragmentLanguageB
             id_native_screen,
             object : NativeListener {
                 override fun nativeAdLoaded(currentNativeAd: NativeAd?) {
-                    if(!isAdded && !isVisible && isDetached){
+                    if (!isAdded && !isVisible && isDetached) {
                         return
                     }
                     _binding?.nativeExitAd?.visibility = View.VISIBLE
                     _binding?.adView?.visibility = View.GONE
-                    if(isAdded && isVisible && !isDetached) {
-                    val adView =layoutInflater.inflate(R.layout.ad_unified_privacy, null) as NativeAdView
-                    adsManager?.nativeAds()?.nativeViewPolicy(currentNativeAd ?: return, adView)
+                    if (isAdded && isVisible && !isDetached) {
+                        val adView = layoutInflater.inflate(
+                            R.layout.ad_unified_privacy,
+                            null
+                        ) as NativeAdView
+                        adsManager?.nativeAds()?.nativeViewPolicy(currentNativeAd ?: return, adView)
                         _binding?.nativeExitAd?.removeAllViews()
                         _binding?.nativeExitAd?.addView(adView)
                     }

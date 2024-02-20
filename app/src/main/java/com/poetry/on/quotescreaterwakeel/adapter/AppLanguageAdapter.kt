@@ -33,13 +33,16 @@ class AppLanguageAdapter(
         return languageData.size
     }
 
+    @SuppressLint("ResourceAsColor")
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         holder.binding.countryName.text = languageData[position].country_name
         holder.binding.radioButton.isChecked = languageData[position].check
-        if (languageData[position].check)
+        if (languageData[position].check) {
             holder.binding.mainItem.setBackgroundResource(R.drawable.rect_white_lang_select)
-        else
+            holder.binding.countryName.setTextColor(R.color.white)
+        } else {
             holder.binding.mainItem.setBackgroundResource(R.drawable.rect_white_lang)
+        }
 
         Glide.with(context ?: return).load(languageData[position].country_flag)
             .into(holder.binding.flagIcon)

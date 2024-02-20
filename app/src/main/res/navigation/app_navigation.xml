@@ -19,7 +19,16 @@
         android:id="@+id/myMainMenuFragment"
         android:name="com.poetry.on.quotescreaterwakeel.ui.MainAppFragment"
         android:label="myMainMenuFragment"
-        tools:layout="@layout/fragment_main_menu_activity" >
-    </fragment>
+        tools:layout="@layout/fragment_main_menu_activity" />
+    <fragment
+        android:id="@+id/FragmentPro"
+        android:name="com.poetry.on.quotescreaterwakeel.ui.FragmentPro"
+        android:label="FragmentPro"
+        tools:layout="@layout/fragment_purchase" />
+    <fragment
+        android:id="@+id/DetailActivity"
+        android:name="com.poetry.on.quotescreaterwakeel.ui.DetailActivity"
+        android:label="DetailActivity"
+        tools:layout="@layout/activity_detail" />
 
 </navigation>

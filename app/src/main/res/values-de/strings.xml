@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Abholleitungen</string>
+    <string name="check_ads">Anzeigen prüfen</string>
+    <string name="no_internet">Kein Internet</string>
+    <string name="thanks_txt">Danke</string>
+    <string name="enjo_app">Hat Ihnen unsere App gefallen?</string>
+    <string name="rating_detail">Bitte bewerten Sie Ihre Erfahrung</string>
+    <string name="no">Nein</string>
+    <string name="cancel">Abbrechen</string>
+    <string name="rate_us">Bewerten Sie uns</string>
+    <string name="set_app_language">App-Sprache auswählen</string>
+    <string name="ad">Anzeige</string>
+    <string name="apply">anwenden</string>
+    <string name="loading_ad">Anzeige wird geladen ..</string>
+    <string name="share_app">App teilen</string>
+    <string name="more_app">Mehr App (Anzeige)</string>
+    <string name="privacy">Datenschutz</string>
+    <string name="language">Sprache</string>
+    <string name="english">Englisch</string>
+    <string name="denmake">Dänemark</string>
+    <string name="france">Frankreich</string>
+    <string name="germany">Deutschland</string>
+    <string name="india">Indien</string>
+    <string name="italian">Italienisch</string>
+    <string name="spain">Spanien</string>
+    <string name="favorite">Favorit</string>
+    <string name="exit_app">App beenden</string>
+    <string name="unlimited_access_to_everything">Unbegrenzter Zugriff auf alles</string>
+    <string name="continue_txt">Weiter</string>
+    <string name="pro_detail_text">Dies ist Pro-Inhalt. Sehen Sie sich das Video an,\num es kostenlos zu erhalten, oder Sie können \nPro-Inhalt kaufen</string>
+    <string name="whatch_view">Video ansehen</string>
+    <string name="buy_pro">Pro kaufen</string>
+    <string name="copy_text">Textkopie</string>
+    <string name="go_premium">Go Premium</string>
+    <string name="upgrade_to_pro">Upgrade auf PRO!</string>
+    <string name="m_q">Motivierende Zitate</string>
+    <string name="s_s">Sag Entschuldigung</string>
+    <string name="s_ll">Kurzer Liebesbrief</string>
+    <string name="i_q">Inspirierende Zitate</string>
+    <string name="b_w_t">Geburtstagswunschtext</string>
+    <string name="l_q">Lebenszitate</string>
+    <string name="p_q">Positive Zitate</string>
+    <string name="f_q">Lustige Zitate</string>
+    <string name="s_q">Erfolgszitate</string>
+    <string name="yes" />
+</resources>

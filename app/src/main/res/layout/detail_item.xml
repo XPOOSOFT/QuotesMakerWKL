@@ -68,7 +68,7 @@
         android:layout_width="@dimen/_15sdp"
         android:layout_height="@dimen/_15sdp"
         android:layout_marginEnd="@dimen/_20sdp"
-        android:visibility="visible"
+        android:visibility="invisible"
         app:layout_constraintBottom_toBottomOf="@id/copyIcon"
         app:layout_constraintEnd_toStartOf="@id/copyIcon"
         app:layout_constraintTop_toTopOf="@id/copyIcon"

@@ -130,7 +130,6 @@ object NativeAds {
                     currentNativeAd = null
                     isNativeLoading = false
                     Log.d(NativeAdsLogs, "onAdImpression native Ad")
-//                    loadNativeAd(activity,true,nativeAdId,nativeListener)
 
                     loadNativeAd(
                         activity,

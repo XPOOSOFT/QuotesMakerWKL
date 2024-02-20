@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Riprendi linee</string>
+    <string name="check_ads">Controlla gli annunci</string>
+    <string name="no_internet">Niente Internet</string>
+    <string name="thanks_txt">Grazie</string>
+    <string name="enjo_app">Ti è piaciuta la nostra app?</string>
+    <string name="rating_detail">Valuta la tua esperienza</string>
+    <string name="no">No</string>
+    <string name="cancel">Annulla</string>
+    <string name="rate_us">Votaci</string>
+    <string name="set_app_language">Seleziona la lingua dell\'app</string>
+    <string name="ad">Annuncio</string>
+    <string name="apply">applica</string>
+    <string name="loading_ad">Caricamento annuncio..</string>
+    <string name="share_app">Condividi app</string>
+    <string name="more_app">Altre app (annuncio)</string>
+    <string name="privacy">Privacy</string>
+    <string name="language">Lingua</string>
+    <string name="english">Inglese</string>
+    <string name="denmake">Danimarca</string>
+    <string name="france">Francia</string>
+    <string name="germany">Germania</string>
+    <string name="india">India</string>
+    <string name="italian">Italiano</string>
+    <string name="spain">Spagna</string>
+    <string name="favorite">Preferito</string>
+    <string name="exit_app">Esci dall\'app</string>
+    <string name="unlimited_access_to_everything">Accesso illimitato a tutto</string>
+    <string name="continue_txt">Continua</string>
+    <string name="pro_detail_text">Questo è un contenuto professionale, guarda il video\per ottenerlo gratuitamente oppure puoi\nacquistarlo</string>
+    <string name="whatch_view">Guarda il video</string>
+    <string name="buy_pro">Acquista Pro</string>
+    <string name="copy_text">Copia testo</string>
+    <string name="go_premium">Passa a Premium</string>
+    <string name="upgrade_to_pro">Aggiorna a PRO!</string>
+    <string name="m_q">Citazioni motivazionali</string>
+    <string name="s_s">Chiedi scusa</string>
+    <string name="s_ll">Breve lettera d\'amore</string>
+    <string name="i_q">Citazioni ispiratrici</string>
+    <string name="b_w_t">Testo del desiderio di compleanno</string>
+    <string name="l_q">Citazioni sulla vita</string>
+    <string name="p_q">Virgolette positive</string>
+    <string name="f_q">Citazioni divertenti</string>
+    <string name="s_q">Citazioni di successo</string>
+    <string name="yes">Sì</string>
+</resources>

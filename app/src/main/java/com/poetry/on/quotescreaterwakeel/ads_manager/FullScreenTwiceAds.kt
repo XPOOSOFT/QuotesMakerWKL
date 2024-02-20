@@ -138,9 +138,9 @@ fun showTwoInterAd(
         counter = 0
         Log.d(TAG, "showTwoInterAd->adIdNormalCounter: $counter")
     }
-    layout.visibility = View.VISIBLE
-    Handler().postDelayed({
-        layout.visibility = View.GONE
+//    layout.visibility = View.VISIBLE
+//    Handler().postDelayed({
+//        layout.visibility = View.GONE
         ads.fullScreenAds().showAndLoad(activity, remoteConfigMedium, object : AdMobAdListener {
             override fun fullScreenAdShow() {
                 inter_frequency_count++
@@ -202,9 +202,8 @@ fun showTwoInterAd(
             }
 
         }, "", object : AdsListener {
-
         })
-    }, 1000)
+//    }, 1000)
 }
 
 fun showTwoInterAdFirst(

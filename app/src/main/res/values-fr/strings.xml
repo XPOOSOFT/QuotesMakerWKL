@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Lignes de retrait</string>
+    <string name="check_ads">Vérifier les annonces</string>
+    <string name="no_internet">Pas Internet</string>
+    <string name="thanks_txt">Merci</string>
+    <string name="enjo_app">Avez-vous apprécié notre application ?</string>
+    <string name="rating_detail">Veuillez évaluer votre expérience</string>
+    <string name="no">Non</string>
+    <string name="cancel">Annuler</string>
+    <string name="rate_us">Évaluez-nous</string>
+    <string name="set_app_language">Sélectionner la langue de application</string>
+    <string name="ad">Annonce</string>
+    <string name="apply">appliquer</string>
+    <string name="loading_ad">Chargement de annonce ..</string>
+    <string name="share_app">Partager application</string>
+    <string name="more_app">Plus application (annonce)</string>
+    <string name="privacy">Confidentialité</string>
+    <string name="language">Langue</string>
+    <string name="english">Anglais</string>
+    <string name="denmake">Danemark</string>
+    <string name="france">France</string>
+    <string name="germany">Allemagne</string>
+    <string name="india">Inde</string>
+    <string name="italian">Italien</string>
+    <string name="spain">Espagne</string>
+    <string name="favorite">Favori</string>
+    <string name="exit_app">Quitter application</string>
+    <string name="unlimited_access_to_everything">Accès illimité à tout</string>
+    <string name="continue_txt">Continuer</string>
+    <string name="pro_detail_text">Ceci est du contenu professionnel, regardez la vidéo\pour obtenir gratuitement, ou vous pouvez \nacheter un produit professionnel</string>
+    <string name="whatch_view">Regarder la vidéo</string>
+    <string name="buy_pro">Acheter Pro</string>
+    <string name="copy_text">Copie de texte</string>
+    <string name="go_premium">Passez à Premium</string>
+    <string name="upgrade_to_pro">Mettez à niveau vers PRO !</string>
+    <string name="m_q">Citations de motivation</string>
+    <string name="s_s">Dites désolé</string>
+    <string name="s_ll">Courte lettre amour</string>
+    <string name="i_q">Citations inspirantes</string>
+    <string name="b_w_t">Texte de souhait anniversaire</string>
+    <string name="l_q">Citations de vie</string>
+    <string name="p_q">Citations positives</string>
+    <string name="f_q">Citations drôles</string>
+    <string name="s_q">Citations de réussite</string>
+    <string name="yes">Oui</string>
+</resources>

@@ -63,14 +63,14 @@
         android:id="@+id/topLanguage"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="All languages"
-        android:textSize="@dimen/_14sdp"
-        android:textColor="#6C6C6C"
-        android:textStyle="bold"
         android:layout_marginStart="@dimen/_15sdp"
         android:paddingVertical="@dimen/_5sdp"
-        app:layout_constraintTop_toBottomOf="@+id/topConstraint"
-        app:layout_constraintStart_toStartOf="parent" />
+        android:text="All languages"
+        android:textColor="#6C6C6C"
+        android:textSize="@dimen/_14sdp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/topConstraint" />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/conversation_detail"
@@ -88,10 +88,10 @@
     <FrameLayout
         android:id="@+id/nativeExitAd"
         android:layout_width="match_parent"
-        android:layout_height="@dimen/_115sdp"
+        android:layout_height="wrap_content"
         android:layout_margin="10dp"
         android:background="@drawable/rect_white_lang"
-        android:minHeight="@dimen/_115sdp"
+        android:minHeight="@dimen/_100sdp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />

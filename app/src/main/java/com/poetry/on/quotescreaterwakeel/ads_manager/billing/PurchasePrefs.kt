@@ -13,6 +13,16 @@ class PurchasePrefs(appContext: Context?) {
         preferences = PreferenceManager.getDefaultSharedPreferences(appContext)
     }
 
+    fun getStringData(key: String?, value: String): String? {
+        return preferences
+            .getString(key, value)
+    }
+
+    // Save Data
+    fun saveData(key: String?, `val`: String?) {
+        preferences.edit()
+            .putString(key, `val`).apply()
+    }
 
     fun putStringLang(key: String?, value: String) {
         checkForNullKey(key)
@@ -21,7 +31,7 @@ class PurchasePrefs(appContext: Context?) {
 
 
     fun getStringLang(key: String?): String {
-        return preferences.getString(key, "en")?:return "en"
+        return preferences.getString(key, "en") ?: return "en"
     }
 
     // Getters

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Afhentningslinjer</string>
+    <string name="check_ads">Tjek annoncer</string>
+    <string name="no_internet">Intet internet</string>
+    <string name="thanks_txt">Tak</string>
+    <string name="enjo_app">Nyd du vores app?</string>
+    <string name="rating_detail">Vurder venligst din oplevelse</string>
+    <string name="no">Nej</string>
+    <string name="cancel">Annuller</string>
+    <string name="rate_us">Vurder os</string>
+    <string name="set_app_language">Vælg appsprog</string>
+    <string name="ad">Annonce</string>
+    <string name="apply">anvend</string>
+    <string name="loading_ad">Annonce indlæses ..</string>
+    <string name="share_app">Del app</string>
+    <string name="more_app">Flere app (annonce)</string>
+    <string name="privacy">Privatliv</string>
+    <string name="language">Sprog</string>
+    <string name="english">Engelsk</string>
+    <string name="denmake">Danmark</string>
+    <string name="france">Frankrig</string>
+    <string name="germany">Tyskland</string>
+    <string name="india">Indien</string>
+    <string name="italian">italiensk</string>
+    <string name="spain">Spanien</string>
+    <string name="favorite">Favorit</string>
+    <string name="exit_app">Afslut app</string>
+    <string name="unlimited_access_to_everything">Ubegrænset adgang til alt</string>
+    <string name="continue_txt">Fortsæt</string>
+    <string name="pro_detail_text">Dette er pro-indhold, se video\nfor at få dette gratis, eller du kan \nkøbe pro</string>
+    <string name="whatch_view">Se video</string>
+    <string name="buy_pro">Køb Pro</string>
+    <string name="copy_text">Tekstkopi</string>
+    <string name="go_premium">Gå til Premium</string>
+    <string name="upgrade_to_pro">Opgrader til PRO!</string>
+    <string name="m_q">Motiverende citater</string>
+    <string name="s_s">Sig undskyld</string>
+    <string name="s_ll">Kort kærlighedsbrev</string>
+    <string name="i_q">Inspirerende citater</string>
+    <string name="b_w_t">Fødselsdagsønsketekst</string>
+    <string name="l_q">Livscitater</string>
+    <string name="p_q">Positive citater</string>
+    <string name="f_q">Sjove citater</string>
+    <string name="s_q">Succescitater</string>
+    <string name="yes" />
+</resources>

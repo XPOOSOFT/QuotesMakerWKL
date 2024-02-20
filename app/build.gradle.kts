@@ -15,10 +15,32 @@ android {
         versionName = "1.0"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
+        setProperty("archivesBaseName", "PickUpLines-VN-$versionName-VC-$versionCode")
     }
 
     buildTypes {
         release {
+            resValue("string", "monthly_subcription_id", "translation_monthly_subscription")
+            resValue("string", "yearly_subcription_id", "translation_yearly_subscription")
+            resValue(
+                "string",
+                "billing_id",
+                ""
+            )
+            isMinifyEnabled = true
+            proguardFiles(
+                getDefaultProguardFile("proguard-android-optimize.txt"),
+                "proguard-rules.pro"
+            )
+        }
+        debug {
+            resValue("string", "monthly_subcription_id", "translation_monthly_subscription")
+            resValue("string", "yearly_subcription_id", "translation_yearly_subscription")
+            resValue(
+                "string",
+                "billing_id",
+                ""
+            )
             isMinifyEnabled = false
             proguardFiles(
                 getDefaultProguardFile("proguard-android-optimize.txt"),
@@ -33,8 +55,8 @@ android {
     kotlinOptions {
         jvmTarget = "1.8"
     }
-    buildFeatures{
-        viewBinding =true
+    buildFeatures {
+        viewBinding = true
         buildConfig = true
     }
 }
@@ -60,15 +82,17 @@ dependencies {
     // Ads Integration
     implementation("com.google.android.gms:play-services-ads:22.6.0")
     implementation(platform("com.google.firebase:firebase-bom:30.3.1"))
-    implementation("com.google.firebase:firebase-config-ktx:21.6.0")
-    implementation("com.google.firebase:firebase-analytics-ktx:21.5.0")
+    implementation("com.google.firebase:firebase-config-ktx:21.6.1")
+    implementation("com.google.firebase:firebase-analytics-ktx:21.5.1")
+    implementation("com.google.firebase:firebase-crashlytics-ktx:18.6.2")
     implementation("com.android.billingclient:billing:6.1.0")
 
-    implementation("androidx.lifecycle:lifecycle-runtime-ktx:2.6.2")
+    implementation("androidx.lifecycle:lifecycle-runtime-ktx:2.7.0")
     implementation("androidx.lifecycle:lifecycle-extensions:2.2.0")
-    implementation("androidx.lifecycle:lifecycle-viewmodel-ktx:2.6.2")
-    implementation("androidx.lifecycle:lifecycle-common:2.6.2")
-    implementation("androidx.lifecycle:lifecycle-livedata-ktx:2.6.2")
+    implementation("androidx.lifecycle:lifecycle-viewmodel-ktx:2.7.0")
+    implementation("androidx.lifecycle:lifecycle-common:2.7.0")
+    implementation("androidx.lifecycle:lifecycle-livedata-ktx:2.7.0")
 
 
+    implementation("com.github.akshaaatt:Google-IAP:1.6.0")
 }

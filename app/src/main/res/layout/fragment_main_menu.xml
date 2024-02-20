@@ -17,6 +17,7 @@
         android:id="@+id/recycler_view_grid"
         android:layout_width="0dp"
         android:layout_height="0dp"
+        android:layout_marginVertical="@dimen/_10sdp"
         app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
         app:spanCount="2"
         tools:listitem="@layout/main_item"
@@ -30,10 +31,10 @@
     <FrameLayout
         android:id="@+id/nativeExitAd"
         android:layout_width="match_parent"
-        android:layout_height="@dimen/_215sdp"
+        android:layout_height="@dimen/_90sdp"
         android:layout_margin="@dimen/_10sdp"
         android:background="@drawable/rect_white_lang"
-        android:minHeight="@dimen/_215sdp"
+        android:minHeight="@dimen/_90sdp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" >
@@ -94,5 +95,6 @@
         />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

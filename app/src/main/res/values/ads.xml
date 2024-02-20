@@ -2,8 +2,10 @@
 <resources>
 
     <string name="id_application_id" translatable="false">ca-app-pub-3940256099942544~3347511713</string>
-    <string name="id_native" translatable="false"></string>
-    <string name="id_fullscreen_splash" translatable="false"></string>
+<!--    <string name="id_application_id" translatable="false">ca-app-pub-9939755733300382~8683641898</string>-->
+    <string name="id_native" translatable="false">ca-app-pub-9939755733300382/5434662027</string>
+    <string name="id_fullscreen_splash" translatable="false">ca-app-pub-9939755733300382/8060825364</string>
     <string name="app_open_splash" translatable="false"></string>
+    <string name="id_banner_1" translatable="false">ca-app-pub-9939755733300382/3511206264</string>
 
 </resources>

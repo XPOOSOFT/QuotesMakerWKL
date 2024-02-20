@@ -33,6 +33,8 @@
     <string name="copy_text">Text Copy</string>
     <string name="go_premium">Go Premium</string>
     <string name="upgrade_to_pro">Upgrade to PRO!</string>
+    <string name="yes">Yes</string>
+
     <string name="m_q">Motivational Quotes</string>
     <string name="s_s">Say Sorry</string>
     <string name="s_ll">Short Love Letter</string>
@@ -42,6 +44,6 @@
     <string name="p_q">Positive Quotes</string>
     <string name="f_q">Funny Quotes</string>
     <string name="s_q">Success Quotes</string>
-    <string name="yes">Yes</string>
+    <string name="a_q">Attitude Quotes</string>
 
 </resources>

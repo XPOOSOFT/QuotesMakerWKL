@@ -70,16 +70,16 @@ class MainAppFragment : Fragment() {
         Glide.with(this).load(R.drawable.nave_menu)
             .into(_binding?.mainLayout?.topLay?.navMenu ?: return)
         val items = listOf(
-            Item(R.drawable.image_1, getString(R.string.m_q), getString(R.string.m_q)),
-            Item(R.drawable.image_2, getString(R.string.l_q), getString(R.string.l_q)),
-            Item(R.drawable.image_3, getString(R.string.s_q), getString(R.string.s_q)),
-            Item(R.drawable.image_4, getString(R.string.f_q), getString(R.string.f_q)),
-            Item(R.drawable.image_5, getString(R.string.p_q), getString(R.string.p_q)),
-            Item(R.drawable.image_6, getString(R.string.l_q), getString(R.string.l_q)),
-            Item(R.drawable.image_7, getString(R.string.b_w_t), getString(R.string.b_w_t)),
-            Item(R.drawable.image_8, getString(R.string.i_q), getString(R.string.i_q)),
-            Item(R.drawable.image_9, getString(R.string.s_ll), getString(R.string.s_ll)),
-            Item(R.drawable.image_10, getString(R.string.s_s), getString(R.string.s_s)),
+            Item(R.drawable.image_1, getString(R.string.m_q), "Motivational"),
+            Item(R.drawable.image_2, getString(R.string.a_q), "Attitude Quotes"),
+            Item(R.drawable.image_3, getString(R.string.s_q), "Success"),
+            Item(R.drawable.image_4, getString(R.string.f_q), "Funny quotes"),
+            Item(R.drawable.image_5, getString(R.string.p_q), "Positive"),
+            Item(R.drawable.image_6, getString(R.string.l_q), "Life"),
+            Item(R.drawable.image_7, getString(R.string.b_w_t), "Birthday Wishes"),
+            Item(R.drawable.image_8, getString(R.string.i_q), "Inspiration"),
+            Item(R.drawable.image_9, getString(R.string.s_ll), "Love"),
+            Item(R.drawable.image_10, getString(R.string.s_s), "Sorry"),
         )
 
         _binding?.navView?.topView?.setOnClickListener { }

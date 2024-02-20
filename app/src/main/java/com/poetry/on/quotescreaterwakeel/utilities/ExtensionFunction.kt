@@ -46,10 +46,11 @@ var inter_frequency_count = 0
 var id_frequency_counter = 10
 var id_inter_counter = 2
 var id_inter_main_medium =
-    if (isDebug()) "ca-app-pub-3940256099942544/1033173712" else "ca-app-pub-9263479717968951/1635117858"
-var id_native_screen = ""
+    if (isDebug()) "ca-app-pub-3940256099942544/1033173712" else "ca-app-pub-9939755733300382/4744396880"
+var id_native_screen = "ca-app-pub-9939755733300382/6137369607"
 var id_app_open_screen = ""
-var id_banner_screen = ""
+var id_banner_screen = "ca-app-pub-9939755733300382/3511206264"
+
 
 const val IS_FIRST = "is_First"
 const val LANG_CODE = "language_code"

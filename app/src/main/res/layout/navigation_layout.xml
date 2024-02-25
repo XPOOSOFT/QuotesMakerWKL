@@ -55,6 +55,7 @@
             android:paddingHorizontal="@dimen/_20sdp"
             android:paddingVertical="@dimen/_5sdp"
             android:text="@string/go_premium"
+            android:visibility="invisible"
             app:layout_constraintBottom_toBottomOf="@+id/top_view"
             app:layout_constraintEnd_toEndOf="@+id/textView2"
             app:layout_constraintStart_toStartOf="@id/textView2"

@@ -1,14 +1,16 @@
 plugins {
     id("com.android.application")
     id("org.jetbrains.kotlin.android")
+    id("com.google.gms.google-services")
+    id("com.google.firebase.crashlytics")
 }
 
 android {
-    namespace = "com.poetry.on.quotescreaterwakeel"
+    namespace = "com.exoapps.pickuplines.flirtymessages"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.poetry.on.quotescreaterwakeel"
+        applicationId = "com.exoapps.pickuplines.flirtymessages"
         minSdk = 24
         targetSdk = 34
         versionCode = 1

@@ -39,11 +39,14 @@
     <string name="s_s">Say Sorry</string>
     <string name="s_ll">Short Love Letter</string>
     <string name="i_q">Inspirational Quotes</string>
-    <string name="b_w_t">Birthday Wish Text</string>
+    <string name="b_w_t">Birthday</string>
     <string name="l_q">Life Quotes</string>
     <string name="p_q">Positive Quotes</string>
     <string name="f_q">Funny Quotes</string>
     <string name="s_q">Success Quotes</string>
     <string name="a_q">Attitude Quotes</string>
+    <string name="f_q_q">Freedom Quotes</string>
+    <string name="f_f_q">Friendship Quotes</string>
+    <string name="h_q">Hope Quotes</string>
 
 </resources>
